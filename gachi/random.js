@@ -1,3 +1,4 @@
+let jsonFile = require('jsonfile');
 function randpng()
 {
     var pngs = [
@@ -11,4 +12,4 @@ function randpng()
     ];
     return pngs[Math.floor(Math.random() * pngs.length)];
 }
-document.write('hikka-gallery.tk/gachi/' + randpng())
+jsonFile.writeFile('gachi.json', 'hikka-gallery.tk/gachi/' + randpng())
