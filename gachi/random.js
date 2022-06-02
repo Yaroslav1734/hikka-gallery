@@ -12,4 +12,4 @@ function randpng()
     ];
     return pngs[Math.floor(Math.random() * pngs.length)];
 }
-fs.writeFile('gachi.json', "hikka-gallery.tk/gachi/" + randpng())
+fs.writeFile('gachi.json', "hikka-gallery.tk/gachi/" + randpng(), 'utf8')
