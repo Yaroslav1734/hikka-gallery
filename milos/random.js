@@ -17,6 +17,6 @@ function randpng()
         '14.jpg',
         '15.jpg'
     ];
-    return jpgs[Math.floor(Math.random() * pngs.length)];
+    return pngs[Math.floor(Math.random() * pngs.length)];
 }
 document.write('hikka-gallery.tk/milos/' + randpng())
