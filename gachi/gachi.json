@@ -12,5 +12,6 @@ function randpng()
         '7.jpg'
     ];
     return pngs[Math.floor(Math.random() * pngs.length)];
-}
-randpng();)
+};)
+
+randpng();
