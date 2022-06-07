@@ -13,6 +13,4 @@ function randpng()
     ];
     return pngs[Math.floor(Math.random() * pngs.length)];
 }
-file.open("w");
-file.writeln("{link: "hikka-gallery.tk/gachi/"" + randpng());
-file.close();
+document.write("https://hikka-gallery.tk/gachi/" + randpng());
