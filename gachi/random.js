@@ -1,5 +1,5 @@
-let fs = require('fs');
-var jsonFile = File('gachi.json');
+var jFile = "gachi/gachi.json";
+var file = new file(jFile);
 function randpng()
 {
     var pngs = [
@@ -13,5 +13,6 @@ function randpng()
     ];
     return pngs[Math.floor(Math.random() * pngs.length)];
 }
-jsonFile.writeln("{link: "hikka-gallery.tk/gachi/"" + randpng());
-jsonFile.close();
+file.open("w");
+file.writeln("{link: "hikka-gallery.tk/gachi/"" + randpng());
+file.close();
