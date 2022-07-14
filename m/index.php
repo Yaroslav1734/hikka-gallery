@@ -1,0 +1,16 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
+
+$files = glob('../milos/*');
+if ($files) {
+    $MILOS_NUM = count($files);
+    $random_milos_index = rand(1, $MILOS_NUM);
+
+    $image_path = 'https://hikka-gallery.tk/milos/'.$random_milos_index.'.jpg';
+} else {
+    $image_path = null;
+}
+$data = ['image' => $image_path];
+
+echo json_encode($data);
